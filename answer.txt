@@ -1,0 +1,18 @@
+//code fragment 1
+$("li").each(function(idx, e) {
+ $(e).css(“color”, “yellow”); 
+});
+//code fragment 2
+$("li").each(function() {
+ $(this).css(“color”, “yellow”); });
+//code fragment 3
+$("li").each(function(idx) {
+ $(this).css(“color”, “yellow”); });
+
+1. They are all equivalent
+
+The first code fragment uses the second argument which is the current element under consideration
+
+while the second and third code fragment uses the 'this' keyword which is also the current element under consdideration.
+
+Notice the idx variable(which is the current index) is being ignored in the third code fragment

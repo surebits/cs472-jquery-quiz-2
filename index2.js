@@ -1,0 +1,1 @@
+$('body').append('<div><h1>JQuery Core</h1></div>');
