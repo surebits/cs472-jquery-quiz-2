@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">	
+    <title>text demo</title>
+    <style>
+      p {
+        color: blue;
+        margin: 8px;
+      }
+
+      span {
+        color: red;
+      }
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  </head>
+
+  <body>
+    <p><span>Test</span> Paragraph.</p>
+    <p></p>
+    <script type="text/javascript">
+      $("p:nth-child(2)").text($("p:first").contents().text());    
+    </script>
+  </body>
+</html>

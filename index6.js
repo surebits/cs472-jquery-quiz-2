@@ -1,0 +1,1 @@
+$(".turkey").replaceWith("<li>Mashed Potatoes</li");
